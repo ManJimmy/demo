@@ -339,11 +339,12 @@ webpackJsonp([0],{
 	    readerModel = this.props.readerModel;
 	    fs = (yield requestFsPromise());
 	    try {
-	      lastFile = (yield readPdfFile({
-	        filename: 'last.pdf',
-	        fs: fs
-	      }));
-	      (yield readerModel.ready(lastFile));
+	      // lastFile = (yield readPdfFile({
+	      //   filename: 'last.pdf',
+	      //   fs: fs
+	      // }));
+	      // (yield readerModel.ready(lastFile));
+	      lastFile = (yield readerModel.ready('rust.pdf'));
 	    } catch (e$) {
 	      e = e$;
 	      (yield readerModel.ready('rust.pdf'));
