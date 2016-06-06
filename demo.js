@@ -346,7 +346,7 @@ webpackJsonp([0],{
 	      (yield readerModel.ready(lastFile));
 	    } catch (e$) {
 	      e = e$;
-	      (yield readerModel.ready('/rust.pdf'));
+	      (yield readerModel.ready('rust.pdf'));
 	    }
 	    return this.setState((function(it){
 	      return it.ready = true, it;
